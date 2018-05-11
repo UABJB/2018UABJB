@@ -22,21 +22,22 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lbNombres = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnRegistrar = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lbApellidos = New System.Windows.Forms.Label()
+        Me.btnCerrar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Label1
+        'lbNombres
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(72, 40)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Label1"
+        Me.lbNombres.AutoSize = True
+        Me.lbNombres.Location = New System.Drawing.Point(72, 40)
+        Me.lbNombres.Name = "lbNombres"
+        Me.lbNombres.Size = New System.Drawing.Size(49, 13)
+        Me.lbNombres.TabIndex = 0
+        Me.lbNombres.Text = "Nombres"
         '
         'TextBox1
         '
@@ -45,14 +46,14 @@ Partial Class Form1
         Me.TextBox1.Size = New System.Drawing.Size(100, 20)
         Me.TextBox1.TabIndex = 1
         '
-        'Button1
+        'btnRegistrar
         '
-        Me.Button1.Location = New System.Drawing.Point(121, 93)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnRegistrar.Location = New System.Drawing.Point(121, 93)
+        Me.btnRegistrar.Name = "btnRegistrar"
+        Me.btnRegistrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnRegistrar.TabIndex = 2
+        Me.btnRegistrar.Text = "Registrar"
+        Me.btnRegistrar.UseVisualStyleBackColor = True
         '
         'TextBox2
         '
@@ -61,25 +62,35 @@ Partial Class Form1
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
         Me.TextBox2.TabIndex = 4
         '
-        'Label2
+        'lbApellidos
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(72, 66)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 13)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Label2"
+        Me.lbApellidos.AutoSize = True
+        Me.lbApellidos.Location = New System.Drawing.Point(72, 66)
+        Me.lbApellidos.Name = "lbApellidos"
+        Me.lbApellidos.Size = New System.Drawing.Size(49, 13)
+        Me.lbApellidos.TabIndex = 3
+        Me.lbApellidos.Text = "Apellidos"
+        '
+        'btnCerrar
+        '
+        Me.btnCerrar.Location = New System.Drawing.Point(307, 129)
+        Me.btnCerrar.Name = "btnCerrar"
+        Me.btnCerrar.Size = New System.Drawing.Size(22, 23)
+        Me.btnCerrar.TabIndex = 5
+        Me.btnCerrar.Text = "X"
+        Me.btnCerrar.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(341, 164)
+        Me.Controls.Add(Me.btnCerrar)
         Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.lbApellidos)
+        Me.Controls.Add(Me.btnRegistrar)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lbNombres)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -87,9 +98,10 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lbNombres As Label
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnRegistrar As Button
     Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Label2 As Label
+    Friend WithEvents lbApellidos As Label
+    Friend WithEvents btnCerrar As Button
 End Class
